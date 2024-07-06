@@ -1,6 +1,8 @@
 vim.cmd("let g:netrw_liststyle = 3")
 
-vim.o.clipboard = "unnamedplus"
+vim.opt.clipboard = "unnamedplus"
+
+vim.opt.guifont = "FiraCodeNerdFont:h8"
 
 local opt = vim.opt -- for conciseness
 
