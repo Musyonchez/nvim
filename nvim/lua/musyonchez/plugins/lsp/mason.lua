@@ -37,6 +37,12 @@ return {
         "emmet_ls",
         "prismals",
         "pyright",
+        "pylsp",
+        "eslint",
+        "sourcery",
+        "ast_grep",
+        "ruff_lsp",
+        "cssls",
       },
     })
 
@@ -46,8 +52,12 @@ return {
         "stylua", -- lua formatter
         "isort", -- python formatter
         "black", -- python formatter
-        "pylint", -- python linter
+        -- "pylint", -- python linter
         "eslint_d", -- js linter
+        "ruff", --python linter
+        "ts-standard",
+        "ast_grep",
+        "yapf",
       },
     })
   end,

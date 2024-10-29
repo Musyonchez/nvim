@@ -2,7 +2,9 @@ vim.cmd("let g:netrw_liststyle = 3")
 
 vim.opt.clipboard = "unnamedplus"
 
-vim.opt.guifont = "FiraCodeNerdFont:h8"
+vim.g.python3_host_prog = '/usr/bin/python'
+-- vim.env.VIRTUAL_ENV = vim.fn.expand("~/Code/libread/local/localvenv")
+-- vim.g.python3_host_prog = vim.fn.expand("~/Code/libread/local/localvenv/bin/python")
 
 local opt = vim.opt -- for conciseness
 
@@ -47,5 +49,3 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
-
-

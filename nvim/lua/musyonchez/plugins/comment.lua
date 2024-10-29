@@ -17,3 +17,9 @@ return {
     })
   end,
 }
+
+-- the key is gc the gg | G | 2j | 2k
+-- to comment the current line is gcc
+-- to place the comment after the line is gcA
+-- -- to put it below is gco
+-- to put it above is gcO
