@@ -1,0 +1,44 @@
+Please create a comprehensive HTML study guide using the document I'm providing. Follow these specific requirements:
+
+## Technical Requirements:
+- Create a single HTML file with embedded CSS
+- Use **only Tailwind CSS** classes for styling (no vanilla CSS)
+- Make it responsive and mobile-friendly
+- Include a clean, professional design with proper spacing and typography
+
+## Content Organization:
+1. **Clear section headers** with proper hierarchy (h1, h2, h3)
+2. **Key concepts highlighted** in colored boxes or cards
+3. **Important definitions** in distinct callout boxes
+4. **Examples and practice problems** in separate, well-formatted sections
+5. **Summary boxes** for each major topic
+6. **Navigation menu** or table of contents for easy jumping between sections
+
+## Content Enhancement:
+- **Explain any unclear or complex concepts** in simple terms
+- **Add practical examples** where the original document lacks them
+- **Create sample questions** and answers for self-testing
+- **Highlight critical information** that's likely to be on exams
+- **Add mnemonics or memory aids** where applicable
+- **Include visual elements** like tables, lists, and organized layouts
+
+## Design Features:
+- Use a **modern, clean layout** with good contrast
+- Implement **color coding** for different types of content (definitions, examples, important notes)
+- Add **hover effects** and smooth interactions
+- Include **print-friendly** styling
+- Make sections **collapsible** if the content is lengthy
+
+## Specific Elements to Include:
+- Header with the subject/topic title
+- Progress indicator or section navigation
+- Color-coded cards for different content types:
+  - Blue for key concepts
+  - Green for examples
+  - Yellow for important notes/warnings
+  - Purple for definitions
+  - Red for critical exam information
+- Footer with study tips
+
+Please make this study guide comprehensive, visually appealing, and optimized for exam preparation. Focus on making complex information digestible and memorable.
+

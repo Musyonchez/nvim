@@ -1,0 +1,44 @@
+
+		
+		## Basic Session Management
+		tmux new -s name                # Create new session
+		tmux a -t name                 # Attach to session
+		tmux kill-session -t name      # Kill session
+		ctrl+a => d                    # Detach from session
+		ctrl+a => $                    # rename session (quicker)
+		ctrl+a => ( and )              # switch between sessions (super!)
+		## Windows (Tabs)
+		ctrl+a => c                    # Create new window
+		ctrl+a => ,                    # Rename current window
+		ctrl+a => n                    # Next window
+		ctrl+a => p                    # Previous window
+		ctrl+a => 0-9                  # Switch to window number
+		ctrl+shift+left/right          # Move window left/right
+		ctrl+a => &                    # Kill window (with confirmation)
+		## Panes (Splits)
+		ctrl+a => |                    # Split vertically (NEW)
+		ctrl+a => -                    # Split horizontally (NEW)
+		ctrl+a => h,j,k,l              # Vim-style pane navigation
+		alt+arrows                     # Move between panes (no prefix)
+		ctrl+a => H,J,K,L              # Resize panes
+		ctrl+a => z                    # Toggle zoom pane
+		ctrl+a => x                    # Kill pane (with confirmation)
+		ctrl+a => S                    # Toggle sync all panes (NEW)
+		ctrl+a => !                    # break pane into new window
+		## Copy Mode & Selection (FIXED)
+		ctrl+shift+c                   # Enter copy mode (NEW)
+		ctrl+a => [                    # Enter copy mode (traditional)
+		v                             # Start selection (in copy mode)
+		y                             # Copy selection & exit
+		right-click                   # Paste anywhere (NEW)
+		ctrl+shift+v                  # Paste (NEW)
+		ctrl+a => p                   # Paste from tmux buffer
+		## Layouts & Views
+		ctrl+a => space               # Cycle through layouts
+		alt+1-5                       # Apply specific layouts (NEW)
+		ctrl+a => s                   # Session picker (tree view)
+		ctrl+a => w                   # Window picker (tree view)
+		## Config & Utilities
+		ctrl+a => r                   # Reload config (displays confirmation)
+		exit || ctrl+d                # Exit shell/pane
+

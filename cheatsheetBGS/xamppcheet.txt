@@ -1,0 +1,102 @@
+To run **XAMPP on Arch Linux**, follow these steps:
+
+---
+
+### ✅ 1. **Make sure XAMPP is installed properly**
+
+If you installed XAMPP via the official `.run` installer (e.g. `xampp-linux-x64-8.2.12-0-installer.run`), you can start it directly using:
+
+```bash
+sudo /opt/lampp/lampp start
+```
+
+---
+
+### ✅ 2. **Common XAMPP Commands**
+
+* **Start XAMPP:**
+
+  ```bash
+  sudo /opt/lampp/lampp start
+  ```
+* **Stop XAMPP:**
+
+  ```bash
+  sudo /opt/lampp/lampp stop
+  ```
+* **Restart XAMPP:**
+
+  ```bash
+  sudo /opt/lampp/lampp restart
+  ```
+* **Check status:**
+
+  ```bash
+  sudo /opt/lampp/lampp status
+  ```
+
+---
+
+### ✅ 3. **Access the Web Dashboard**
+
+Once XAMPP is started, open your browser and go to:
+
+```
+http://localhost
+```
+
+You should see the XAMPP dashboard.
+
+---
+
+### ✅ 4. **Manage Services Individually (Optional)**
+
+* **Start only Apache:**
+
+  ```bash
+  sudo /opt/lampp/lampp startapache
+  ```
+* **Start only MySQL (MariaDB):**
+
+  ```bash
+  sudo /opt/lampp/lampp startmysql
+  ```
+
+---
+
+### ✅ 5. **Add to `.bashrc` for easier usage (Optional)**
+
+To avoid typing the full path every time, add an alias to your shell config:
+
+```bash
+echo "alias xampp='sudo /opt/lampp/lampp'" >> ~/.bashrc
+source ~/.bashrc
+```
+
+Now you can just use:
+
+```bash
+xampp start
+```
+
+---
+
+### ✅ 6. **Fix Common Issues**
+
+* If you get port conflicts (like Apache not starting), check:
+
+  ```bash
+  sudo netstat -tulpn | grep :80
+  ```
+
+  And stop the conflicting service:
+
+  ```bash
+  sudo systemctl stop apache
+  sudo systemctl stop nginx
+  ```
+
+---
+
+Let me know if you want to start XAMPP automatically on boot or use a GUI.
+

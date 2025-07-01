@@ -1,0 +1,42 @@
+                    
+                    
+                    
+                    
+    ## Mode Management
+    i, a, o                       # Insert before/after cursor, new line below
+    I, A, O                       # Insert start/end of line, new line above
+    v, V, ctrl+v                  # Visual, Visual line, Visual block
+    esc, ctrl+c, ctrl+[           # Exit to normal mode
+    ## Text Objects & Operations
+    yy, dd, cc                   # Yank/delete/change entire line
+    y$, d$, c$                   # Yank/delete/change to end of line
+    u, ctrl+r                    # Undo, redo (how do you live without these?!)
+    .                            # Repeat last command (still useful even with mouse)
+    gv                           # Reselect your last selection (handy!)
+    p, P                         # Paste after/before cursor
+    >>, <<                       # Indent/unindent current line
+    ==                           # Auto-indent current line
+    g~                           # Toggle case of selection/motion
+    ## Movement Mastery  
+    h,j,k,l                       # Basic movement (left,down,up,right)
+    w, e, b                       # Word forward, end of word, word backward
+    W, E, B                       # WORD movement (ignore punctuation)
+    0, ^, $                       # Start of line, first non-blank, end of line
+    gg, G                         # Go to top, go to bottom
+    ctrl+u, ctrl+d               # Half page up/down
+    ctrl+b, ctrl+f               # Full page up/down
+    {, }                         # Previous/next paragraph
+    ## Search & Replace Power
+    /search_term          # Search forward
+    ?search_term          # Search backward
+    n                     # Next match
+    N                     # Previous match
+    *                     # Search word under cursor forward
+    #                     # Search word under cursor backward
+    ## File & Buffer Management
+    :w, :w filename              # Save, save as
+    :q, :q!, :wq, :x             # Quit, force quit, save & quit
+    :bn, :bp                     # Next/previous buffer
+    ctrl+^                       # Switch to alternate buffer
+    :bd                          # Delete/close buffer
+
