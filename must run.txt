@@ -3,3 +3,16 @@ must run
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 sudo pacman -S ttf-jetbrains-mono
+
+sudo pacman -S xsel xclip
+
+yay -S nodejs npm
+
+sudo pacman -S grep
+
+yay -S mousepad
+
+# after adding the conf run
+alacritty migrate
+
+
