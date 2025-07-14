@@ -16,3 +16,7 @@ yay -S mousepad
 alacritty migrate
 
 
+sudo pacman -S adobe-source-han-sans-cn-fonts
+fc-cache -fv
+
+sudo pacman -S espeak-ng alsa-utils
