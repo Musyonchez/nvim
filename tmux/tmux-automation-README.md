@@ -170,9 +170,37 @@ tmux_n work
 6. **Type `tmux` for quick command reference**
 7. **Use `tmux_n` for simple sessions without structured windows**
 
+## Enhanced Tmux Configuration
+
+The `.tmux.conf` includes modern features:
+- Enhanced window/pane management with better keybindings
+- Smart vim/tmux navigation integration
+- Improved copy-paste with system clipboard integration
+- Modern status bar with better indicators
+- Plugin support with TPM (Tmux Plugin Manager)
+- Session management improvements
+- Developer-friendly features like synchronize-panes
+- **Scrollable help systems** for Neovim, Tmux, and Terminal commands
+
+Key tmux keybindings:
+- `Prefix + |/-` - Split vertical/horizontal
+- `Prefix + h/j/k/l` - Navigate panes (vim-style)
+- `Ctrl + h/j/k/l` - Smart vim/tmux navigation
+- `Alt + 1-9` - Quick window selection
+- `Alt + n/p` - Next/previous window (no prefix needed)
+- `Prefix + n` - New session (with name prompt)
+- `Prefix + r` - Reload config
+- `Prefix + z` - Zoom/unzoom pane
+
+**Pro Help Systems (Scrollable):**
+- `Prefix + A` - Terminal/Automation commands (j/k to scroll, q to quit)
+- `Prefix + N` - Neovim pro commands (j/k to scroll, q to quit)
+- `Prefix + T` - Tmux pro commands (j/k to scroll, q to quit)
+
 ## Troubleshooting
 
 - **Script not executable**: Run `chmod +x ~/tmux-session.sh ~/tmux-templates.sh ~/tmux-aliases.sh`
 - **Functions not available**: Ensure you've sourced the aliases file in your shell config
 - **Sessions not starting**: Check that tmux is installed and project paths exist
 - **Path issues**: Remember relative paths go to ~/Code, use absolute paths if needed
+- **Help popups not scrollable**: Ensure your tmux version supports `less` in popups
